@@ -311,8 +311,9 @@ font-size: 22px;
 	.bg{
 		background-image: url(assets/images/bg.png);
 		background-repeat: repeat;
-		background-position: contain !important;
+		background-size: contain;
 		height: 100%;
+		background-attachment: scroll;
 	}
 	.token{
 		width: 340px;
