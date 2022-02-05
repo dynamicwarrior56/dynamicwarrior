@@ -308,9 +308,15 @@ font-size: 22px;
   }
   /* Responsive layout - makes a one column-layout instead of two-column layout */
   @media (max-width: 600px) {
+	.bg{
+		background-image: url(assets/images/bg.png);
+		background-repeat: repeat;
+		background-position: contain !important;
+		height: 100%;
+	}
 	.token{
-		width: 400px;
-		height: 260px;
+		width: 340px;
+		height: 220px;
 		margin-top: 140px;
 		margin-bottom: 140px;
 	}
