@@ -6,83 +6,51 @@
 	font-family: futura;
 	src: url(assets/font/futuramediumbt.ttf);
   }
+#galleytitle{
+	font-family: heading;
+	font-size: 40px;
+	color: white;
+	text-decoration: underline;
+	margin-top: 30px;
+}
+  .gallery1 {
+	width: 250px;
+	height: 250px;
+  
+	box-shadow:0 0px 7px #6ef2e0, 0 0 5px #6ef2e0, 0 0 2px #6ef2e0,
+	0 0 30px #6ef2e0, 0 0 20px #6ef2e0, 0 0 12px #6ef2e0, 0 0 12px #6ef2e0,
+	0 0 10px #6ef2e0;
+  }
+  .gallery2 {
+	width: 250px;
+	height: 250px;
+	box-shadow:0 0px 7px #6ef2e0, 0 0 5px #6ef2e0, 0 0 2px #6ef2e0,
+	0 0 30px #6ef2e0, 0 0 20px #6ef2e0, 0 0 12px #6ef2e0, 0 0 12px #6ef2e0,
+	0 0 10px #6ef2e0;
+  }
+  
+  .flex-containergallery {
+	display: flex;
+	flex-direction: row;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 200px;
+  }
+  .flex-container-insidegallery {
+	display: flex;
+	flex-direction: row;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .flex-itemgallery {
+	padding: 10px;
+	flex: 50%;
+  }
+  
 
-
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
- body {
-	 font-family: 'Open Sans', sans-serif;
-	 margin: 0;
-	 padding: 0;
-}
- main {
-	 min-width: 300px;
-	 max-width: 600px;
-	 margin: auto;
-	 background:rgba(82, 110, 233, 0.5);
-	 padding: 50px;
-	 margin-top: 50px;
-
-}
- p {
-	 font-size: 1em;
-	 line-height: 1.75em;
-	 border-top: 3px solid;
-	 border-image: linear-gradient(to right, #000000 0%, #ffffff 100%);
-	 
-	 border-image-slice: 1;
-	 border-width: 3px;
-	 margin: 0;
-	 padding: 40px;
-	 counter-increment: section;
-	 position: relative;
-	 color: #ffffff;
-	 font-family: futura;
-
-}
- p:before {
-	 content: counter(section);
-	 position: absolute;
-	 border-radius: 50%;
-	 top:20%;
-	 padding: 5px;
-	 height: 2.25em;
-	 width: 2.25em;
-	 background-color: #000000;
-	 text-align: center;
-	 line-height: 1.50em;
-	 color: #ffffff;
-	 font-size: 1em;
-	 box-shadow: 0 0px 7px #ffffff, 0 0 10px #ffffff, 0 0 21px #ffffff,
-	 0 0 42px #ffffff, 0 0 40px #ffffff, 0 0 12px #ffffff, 0 0 12px #ffffff,
-	 0 0 10px #ffffff;
-}
- p:nth-child(odd) {
-	 border-right: 3px solid;
-	 padding-left: 0;
-}
- p:nth-child(odd):before {
-	 left: 100%;
-	 margin-left: -20px;
-}
- p:nth-child(even) {
-	 border-left: 3px solid;
-	 padding-right: 0;
-}
- p:nth-child(even):before {
-	 right: 100%;
-	 margin-right: -20px;
-}
- p:first-child {
-	 border-top: 0;
-	 border-top-right-radius: 0;
-	 border-top-left-radius: 0;
-}
- p:last-child {
-	 border-bottom-right-radius: 0;
-	 border-bottom-left-radius: 0;
-}
- 
 .navbar-wrapper {
 	position: absolute;
 	top: 0;
@@ -112,7 +80,7 @@ font-size: 22px;
 #banner{
 	
 	width:100%;
-	height: 650px;
+	height: 750px;
 	margin-top: 25px;
 
 }
@@ -137,7 +105,7 @@ font-size: 22px;
 #mypara{
 	font-family: futura;
 	font-size: 20px;
-	margin-top: 100px;
+	margin-top: 20px;
 	color: white;
 }
 * {
@@ -170,23 +138,19 @@ font-size: 22px;
 
   }
   #accordianbox {
-    height: 2300px;
-  }
-  .faqimg {
-	width: 70px;
-	height: 40px;
+    height: 2500px;9
   }
   
   .accordion {
 	color: #fff;
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(0,0,0,0.6);
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: 20px;
+	font-size: 23px;
 	transition: 0.4s;
 	margin-top: 25px;
 	margin-bottom: 10px;
@@ -198,8 +162,8 @@ font-size: 22px;
   
   .active,
   .accordion:hover {
-	background-color: rgb(0, 0, 0,0.2);
-	color: #fff;
+	background-color: rgb(0, 0, 0,0.3);
+	color: #000;
   }
   
   .accordion:after {
@@ -229,8 +193,8 @@ font-size: 22px;
   }
   
   .faq{
-	height: 70px;
-	width: 120px;
+	height: 60px;
+	width: 140px;
 	margin-top: 50px !important;
 
 
@@ -240,7 +204,8 @@ font-size: 22px;
 	display: block;
 	padding-top: 40px;
 	padding-bottom: 1px;
-	background: rgba(0, 0, 0);
+	background-image: url('assets/images/footer.jpg');
+
   }
   
   .page-footer p a {
@@ -257,6 +222,7 @@ font-size: 22px;
   .page-footer h5 {
 	color: #fff;
 	margin-bottom: 24px;
+	margin-left: 20px;
   }
   
   .page-footer p {
@@ -267,6 +233,7 @@ font-size: 22px;
 	position: relative;
 	padding-left: 0;
 	list-style: none;
+	margin-left: 30px;
   }
   
   .footer-menu li {
@@ -297,40 +264,295 @@ font-size: 22px;
 	  height: 60px;
   }
   .logoname{
-	  width: 130px;
-	  height: 50px;
+	  width: 500px;
+	  height: 200px;
+	  margin-top: 60px;
   }
   .token{
-	  width: 70%;
-	  height: 70%;
-	  margin-top: 140px;
+	  margin-top: 20px;
+	  margin-left: 330px;
+	  width: 850px;
 	  margin-bottom: 140px;
+	  font-family: futura;
+	  color: white;
+	  background: rgb(0,0,0,0.7);
+	  padding: 40px;
   }
+  .tokengif{
+	  width: 40%;
+	  height: 40%;
+	  margin-top: 70px;
+  }
+  .tokenheading{
+	  font-family: heading;
+  }
+  .welcome{
+	  font-family: heading;
+	  font-size: 25px;
+  }
+  
+  .timeline {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+  }
+
+  .daogif{
+	width: 40%;
+	height: 40%;
+	margin-top: 130px;
+}
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	text-shadow: 10px 10px 0px #35bb78;
+	box-shadow:
+    0 0 400px 30px #fff,  /* inner white */
+    0 0 400px 60px rgb(29, 26, 201), /* middle magenta */
+    0 0 30px 20px #0ff; /* outer cyan */
+
+
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+	left: -50.5%;
+
+  }
+  
+  /* Place the container to the right */
+  .right {
+	left: 50.5%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid white;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+	left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+  }
+  #roadmappara{
+	  width: 500px;
+	  align-items: center;
+	  margin-left: 510px;
+	  color: white;
+	  background-color: rgb(0,0,0,0.5);
+	  padding:20px;
+	  font-family: futura;
+  }
+  .jan{
+	  font-family: heading;
+  }
+  .points{
+	  font-family: futura;
+  }
+  #faqcontainer{
+	margin-left: 130px;
+	margin-right: 130px;
+  }
+  @media screen and (max-width: 600px) {
+	#galleytitle{
+		font-family: heading;
+		font-size: 35px;
+		color: white;
+		text-decoration: underline;
+		margin-top: 30px;
+	}
+	#roadmappara{
+		width: 300px;
+		align-items: center;
+		margin-left: 40px;
+		color: white;
+		background-color: rgb(0,0,0,0.5);
+		padding:10px;
+		font-family: futura;
+
+	}
+	
+	.gallery1 {
+		width: 130px;
+		height: 130px;
+		
+	box-shadow: 0 0px 7px #6ef2e0, 0 0 5px #6ef2e0, 0 0 2px #6ef2e0,
+	0 0 30px #6ef2e0, 0 0 20px #6ef2e0, 0 0 12px #6ef2e0, 0 0 12px #6ef2e0,
+	0 0 10px #6ef2e0;
+	  }
+	  .gallery2 {
+		width: 120px;
+		height: 120px;
+		
+	box-shadow: 0 0px 7px #6ef2e0, 0 0 5px #6ef2e0, 0 0 2px #6ef2e0,
+	0 0 30px #6ef2e0, 0 0 20px #6ef2e0, 0 0 12px #6ef2e0, 0 0 12px #6ef2e0,
+	0 0 10px #6ef2e0;
+	  }
+	  .flex-containergallery {
+		flex-direction: column;
+		margin-left: 12px;
+		margin-right: 20px;
+	  }
+	
+  #faqcontainer{
+	margin-left: 5px;
+	margin-right: 5px;
+  }
+ 
+	.timeline {
+		position: relative;
+		max-width: 350px;
+		margin: 0 auto;
+	  }
+	  
+	/* Place the timelime to the left */
+	.timeline::after {
+	left: 3px;
+	right:20px;
+	}
+	
+	/* Full-width containers */
+	.container {
+	width: 80%;
+	padding-left: 70px;
+	padding-right: 25px;
+	}
+	
+	/* Make sure that all arrows are pointing leftwards */
+	.container::before {
+	left: 60px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+	}
+  
+	/* Make sure all circles are at the same spot */
+	.left::after, .right::after {
+	left: 0%;
+	}
+	.left{
+		left:0%;
+	}
+	
+	/* Make all right containers behave like the left ones */
+	.right {
+	left: 0%;
+	}
+  }
+  .content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+  }
+  
+  
   /* Responsive layout - makes a one column-layout instead of two-column layout */
   @media (max-width: 600px) {
 	.bg{
 		background-image: url(assets/images/bg.png);
-		background-repeat: repeat;
-		background-size: contain;
+		background-repeat: no-repeat;
+		background-size: cover;
 		background-attachment: fixed;
 	}
+	
 	.token{
-		width: 340px;
-		height: 220px;
-		margin-top: 140px;
+		margin-top: 20px;
+		margin-left: 5%;
+		width: 330px;
+		margin-right: 10px;
 		margin-bottom: 140px;
+		font-family: futura;
+		font-size: 10px;
+		color: white;
+		background: rgb(0,0,0,0.7);
+		padding: 40px;
 	}
+	.tokengif{
+		width: 100%;
+		height: 100%;
+		margin-top: 90px;
+		margin-left: 0px;
+	}
+	.tokenheading{
+		font-family: heading;
+	}
+	.daogif{
+		width: 100%;
+		height: 100%;
+		margin-top: 130px;
+	}
+  
 	.logo{
 		width: 60px;
 		height: 60px;
 	}
 	.logoname{
-		width: 130px;
-		height: 50px;
+		width: 250px;
+		height: 100px;
 	}
 	  html,body{
 		  margin: 0;
-		  height: 100%;
 		  overflow-x: hidden;
 	  }
 	.flex-container {
@@ -342,21 +564,21 @@ font-size: 22px;
 	#banner{
 	
 		width:100%;
-		height: 250px;
+		height: 220px;
 		margin-top: 75px;
 	
 	}
 	#aboutus{
 		height: 40px;
-		width: 180px;
+		width: 160px;
 		margin-top: 50px !important;
 	
 	
 	}
 	#aboutbg{
 		background:rgb(0,0, 0,0.5);
-		width:350px;
-		height: 550px;
+		width:300px;
+		height: 750px;
 		padding:5px;
 		margin-top: 60px;
 		margin-left: 7px;
@@ -366,14 +588,14 @@ font-size: 22px;
 		height: 250px;
 		width: 250px;
 		margin-top: 20px;
-		margin-left: 40px;
+		margin-left: 16px;
 	}
 	#mypara{
 		font-family: futura;
 		font-size: 18px;
-		margin-top: 50px;
+		margin-top: 10px;
 		color: white;
-		margin-left: 38px;
+		margin-left: 18px;
 
 	}
 	  
@@ -396,7 +618,30 @@ font-size: 22px;
 		width: 100%;
 		margin-top: 50px;
 	}
+	.accordion {
+		color: #fff;
+		background-color: rgba(0,0,0,0.6);
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 18px;
+		transition: 0.4s;
+		margin-top: 25px;
+		margin-bottom: 10px;
+		margin-left: 0px;
+		font-family: futura;
+		
+		box-shadow: 0 0px 7px cyan, 0 0 5px cyan, 0 0 2px cyan, 0 0 3px cyan,
+		  0 0 2px cyan, 0 0 2px cyan, 0 0 2px cyan, 0 0 5px cyan;
+	  }
+	
   
 	
   }
+  
+
+
   

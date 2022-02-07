@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+ body {
+	 font-family: 'Open Sans', sans-serif;
+	 margin: 0;
+	 padding: 0;
+}
+ main {
+	 min-width: 300px;
+	 max-width: 600px;
+	 margin: auto;
+	 background:rgba(82, 110, 233, 0.5);
+	 padding: 50px;
+	 margin-top: 50px;
+
+}
+ p {
+	 font-size: 1em;
+	 line-height: 1.75em;
+	 border-top: 3px solid;
+	 border-image: linear-gradient(to right, #000000 0%, #ffffff 100%);
+	 
+	 border-image-slice: 1;
+	 border-width: 3px;
+	 margin: 0;
+	 padding: 40px;
+	 counter-increment: section;
+	 position: relative;
+	 color: #ffffff;
+	 font-family: futura;
+
+}
+ p:before {
+	 content: counter(section);
+	 position: absolute;
+	 border-radius: 50%;
+	 top:20%;
+	 padding: 5px;
+	 height: 2.25em;
+	 width: 2.25em;
+	 background-color: #000000;
+	 text-align: center;
+	 line-height: 1.50em;
+	 color: #ffffff;
+	 font-size: 1em;
+	 box-shadow: 0 0px 7px #ffffff, 0 0 10px #ffffff, 0 0 21px #ffffff,
+	 0 0 42px #ffffff, 0 0 40px #ffffff, 0 0 12px #ffffff, 0 0 12px #ffffff,
+	 0 0 10px #ffffff;
+}
+ p:nth-child(odd) {
+	 border-right: 3px solid;
+	 padding-left: 0;
+}
+ p:nth-child(odd):before {
+	 left: 100%;
+	 margin-left: -20px;
+}
+ p:nth-child(even) {
+	 border-left: 3px solid;
+	 padding-right: 0;
+}
+ p:nth-child(even):before {
+	 right: 100%;
+	 margin-right: -20px;
+}
+ p:first-child {
+	 border-top: 0;
+	 border-top-right-radius: 0;
+	 border-top-left-radius: 0;
+}
+ p:last-child {
+	 border-bottom-right-radius: 0;
+	 border-bottom-left-radius: 0;
+}
+ 
