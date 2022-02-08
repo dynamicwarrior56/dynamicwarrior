@@ -21,6 +21,14 @@
 	0 0 30px #6ef2e0, 0 0 20px #6ef2e0, 0 0 12px #6ef2e0, 0 0 12px #6ef2e0,
 	0 0 10px #6ef2e0;
   }
+  .team1 {
+	width: 250px;
+	height: 250px;
+  
+	box-shadow:0 0px 7px #6ef2e0, 0 0 5px #6ef2e0, 0 0 2px #6ef2e0,
+	0 0 30px #6ef2e0, 0 0 20px #6ef2e0, 0 0 12px #6ef2e0, 0 0 12px #6ef2e0,
+	0 0 10px #6ef2e0;
+  }
   .gallery2 {
 	width: 250px;
 	height: 250px;
@@ -31,11 +39,11 @@
   
   .flex-containergallery {
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 	font-size: 30px;
 	text-align: center;
 	margin-top: 30px;
-	margin-left: 200px;
   }
   .flex-container-insidegallery {
 	display: flex;
@@ -100,7 +108,7 @@ font-size: 22px;
 }
 .gif{
 	height: 320px;
-	width: 320px;
+	width: 380px;
 }
 #mypara{
 	font-family: futura;
@@ -137,9 +145,7 @@ font-size: 22px;
 	  font-family: heading !important;
 
   }
-  #accordianbox {
-    height: 2500px;9
-  }
+  
   
   .accordion {
 	color: #fff;
@@ -195,7 +201,7 @@ font-size: 22px;
   .faq{
 	height: 60px;
 	width: 140px;
-	margin-top: 50px !important;
+	margin-top: 10px !important;
 
 
 }
@@ -270,7 +276,6 @@ font-size: 22px;
   }
   .token{
 	  margin-top: 20px;
-	  margin-left: 330px;
 	  width: 850px;
 	  margin-bottom: 140px;
 	  font-family: futura;
@@ -281,10 +286,12 @@ font-size: 22px;
   .tokengif{
 	  width: 40%;
 	  height: 40%;
-	  margin-top: 70px;
+	  margin-top: 10px;
   }
   .tokenheading{
 	  font-family: heading;
+	  margin-top: 130px;
+	  color: white;
   }
   .welcome{
 	  font-family: heading;
@@ -295,12 +302,13 @@ font-size: 22px;
 	position: relative;
 	max-width: 600px;
 	margin: 0 auto;
+	margin-top: 40px;
   }
 
   .daogif{
 	width: 40%;
 	height: 40%;
-	margin-top: 130px;
+	margin-top: 30px;
 }
   
   /* The actual timeline (the vertical ruler) */
@@ -412,8 +420,96 @@ font-size: 22px;
   #faqcontainer{
 	margin-left: 130px;
 	margin-right: 130px;
+	height: 500px;
+  }
+  #accordianbox {
+	height: 2700px;
+  }
+  #team{
+	  margin-bottom: 250px;
+  }
+  #myutilities{
+	margin-bottom: 70px;
+}
+  #teamtitle{
+	font-family: heading;
+	font-size: 50px;
+	color: white;
+	text-decoration: underline;
+	margin-top: 160px;
+}
+.teamname{
+	font-family: heading;
+	color: white;
+	margin-top: 20px;
+}
+.team2{
+	color: #fff;
+}
+#utilities{
+	background: rgb(0,0,0,0.5);
+	margin-left: 100px;
+	margin-right: 100px;
+
+}
+.utilities1 {
+	width: 350px;
+	height: 220px;
+  
+  }
+  .utilities2 {
+	width: 350px;
+	height: 220px;
+  
+  }
+  .utilities3 {
+	width: 320px;
+	height: 170px;
+	margin-top: 50px;
+  
   }
   @media screen and (max-width: 600px) {
+	#utilities{
+		background: rgb(0,0,0,0.5);
+		width: 100%;
+		margin-left: 0%;
+	
+	}
+	.utilities1 {
+		width: 250px;
+		height: 150px;
+	  
+	  }
+	  .utilities2 {
+		width: 290px;
+		height: 170px;
+	  
+	  }
+	  .utilities3 {
+		width: 200px;
+		height: 130px;
+		margin-top: 50px;
+	  
+	  }
+	
+	.flex-container-insidegallery {
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+		text-align: center;
+		margin-top: 10px;
+	  }
+	  
+	#accordianbox {
+		height: 3700px;
+	  }
+	  #teamtitle{
+		font-family: heading;
+		font-size: 35px;
+		color: white;
+		text-decoration: underline;
+		margin-top: 150px;
+	}
 	#galleytitle{
 		font-family: heading;
 		font-size: 35px;
@@ -422,9 +518,8 @@ font-size: 22px;
 		margin-top: 30px;
 	}
 	#roadmappara{
-		width: 300px;
-		align-items: center;
-		margin-left: 40px;
+		width: 100%;
+		margin-left: 0px;
 		color: white;
 		background-color: rgb(0,0,0,0.5);
 		padding:10px;
@@ -450,19 +545,22 @@ font-size: 22px;
 	  }
 	  .flex-containergallery {
 		flex-direction: column;
-		margin-left: 12px;
-		margin-right: 20px;
 	  }
 	
   #faqcontainer{
 	margin-left: 5px;
 	margin-right: 5px;
+	height: 1500px;
+	margin-bottom: 900px;
+
   }
  
 	.timeline {
 		position: relative;
 		max-width: 350px;
 		margin: 0 auto;
+		
+	margin-top: 40px;
 	  }
 	  
 	/* Place the timelime to the left */
@@ -477,6 +575,25 @@ font-size: 22px;
 	padding-left: 70px;
 	padding-right: 25px;
 	}
+	.container::after {
+		content: '';
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		right: -17px;
+		background-color: white;
+		text-shadow: 10px 10px 0px #35bb78;
+		box-shadow:
+		0 0 1000px 1px #fff,  /* inner white */
+		0 0 400px 60px rgb(29, 26, 201), /* middle magenta */
+		0 0 10px 10px #0ff; /* outer cyan */
+	
+	
+		top: 15px;
+		border-radius: 50%;
+		z-index: 1;
+	  }
+	
 	
 	/* Make sure that all arrows are pointing leftwards */
 	.container::before {
@@ -518,9 +635,7 @@ font-size: 22px;
 	
 	.token{
 		margin-top: 20px;
-		margin-left: 5%;
 		width: 330px;
-		margin-right: 10px;
 		margin-bottom: 140px;
 		font-family: futura;
 		font-size: 10px;
@@ -531,7 +646,7 @@ font-size: 22px;
 	.tokengif{
 		width: 100%;
 		height: 100%;
-		margin-top: 90px;
+		margin-top: 10px;
 		margin-left: 0px;
 	}
 	.tokenheading{
@@ -540,7 +655,7 @@ font-size: 22px;
 	.daogif{
 		width: 100%;
 		height: 100%;
-		margin-top: 130px;
+		margin-top: 30px;
 	}
   
 	.logo{
