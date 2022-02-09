@@ -488,7 +488,15 @@ font-size: 22px;
 	margin-top: 50px;
   
   }
+  .nftcalendarimg{
+	  width: 30%;
+	  height: 50%;
+  }
   @media screen and (max-width: 600px) {
+	.nftcalendarimg{
+		width: 30%;
+		height: 70%;
+	}
 	#utilities{
 		background: rgb(0,0,0,0.5);
 		width: 100%;
