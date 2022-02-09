@@ -57,6 +57,26 @@
 	padding: 10px;
 	flex: 50%;
   }
+  .flex-containerutilities {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+  }
+  .flex-container-insideutilities {
+	display: flex;
+	flex-direction: row;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .flex-itemutilities {
+	padding: 10px;
+	flex: 50%;
+  }
   
 
 .navbar-wrapper {
@@ -544,6 +564,10 @@ font-size: 22px;
 	  }
 	  .flex-containergallery {
 		flex-direction: column;
+	  }
+	  .flex-container-insideutilities{
+		  display: flex;
+		  flex-direction: column;
 	  }
 	
   #faqcontainer{
