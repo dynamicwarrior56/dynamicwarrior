@@ -231,6 +231,8 @@ font-size: 22px;
 	padding-top: 40px;
 	padding-bottom: 1px;
 	background-image: url('assets/images/footer.jpg');
+	background-repeat: repeat;
+	background-size: 100% 100%;
 
   }
   
@@ -357,7 +359,8 @@ font-size: 22px;
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	right: -17px;
+	right: -32px;
+
 	background-color: white;
 	text-shadow: 10px 10px 0px #35bb78;
 	box-shadow:
@@ -370,49 +373,23 @@ font-size: 22px;
 	border-radius: 50%;
 	z-index: 1;
   }
+
   
   /* Place the container to the left */
   .left {
-	left: -50.5%;
+	left: -53.5%;
 
   }
   
   /* Place the container to the right */
   .right {
-	left: 50.5%;
+	left: 53.5%;
   }
   
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-	content: " ";
-	height: 0;
-	position: absolute;
-	top: 22px;
-	width: 0;
-	z-index: 1;
-	right: 30px;
-	border: medium solid white;
-	border-width: 10px 0 10px 10px;
-	border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-	content: " ";
-	height: 0;
-	position: absolute;
-	top: 22px;
-	width: 0;
-	z-index: 1;
-	left: 30px;
-	border: medium solid white;
-	border-width: 10px 10px 10px 0;
-	border-color: transparent white transparent transparent;
-  }
   
   /* Fix the circle for containers on the right side */
   .right::after {
-	left: -16px;
+	left: -35px;
   }
   
   /* The actual content */
@@ -425,7 +402,6 @@ font-size: 22px;
   #roadmappara{
 	  width: 500px;
 	  align-items: center;
-	  margin-left: 510px;
 	  color: white;
 	  background-color: rgb(0,0,0,0.5);
 	  padding:20px;
@@ -596,7 +572,7 @@ font-size: 22px;
 	  
 	/* Place the timelime to the left */
 	.timeline::after {
-	left: 3px;
+	left: 7px;
 	right:20px;
 	}
 	
