@@ -468,7 +468,46 @@ font-size: 22px;
 	  width: 30%;
 	  height: 50%;
   }
+  #mint{
+	  color: white;
+	  font-family: heading;
+	  margin-top: 20px;
+	  font-size:50px;
+  }
+  #demo{
+	color: white;
+	font-family: futura;
+	margin-top: 20px;
+	font-size:50px;
+  
+}
+#link{
+	color: black;
+	font-family: futura;
+	margin-top: 20px;
+	font-size:30px;
+  
+}
   @media screen and (max-width: 600px) {
+	#mint{
+		color: white;
+		font-family: heading;
+		margin-top: 20px;
+		font-size:30px;
+	}
+	#demo{
+	  color: white;
+	  font-family: futura;
+	  margin-top: 20px;
+	  font-size:35px;
+	}
+	#link{
+		color: black;
+		font-family: futura;
+		margin-top: 20px;
+		font-size:15px;
+	  
+	}
 	.nftcalendarimg{
 		width: 30%;
 		height: 70%;
